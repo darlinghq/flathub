@@ -7,7 +7,9 @@ modules:
   - name: darling
     buildsystem: cmake
     builddir: true
+    modules:
+      - modules/fuse.yml
     sources:
       - type: git
         url: https://github.com/darlinghq/darling.git
-        commit: 016586265016f4d77b305f7516a0a5bd5a72b443
+        commit: c30e22f13ea61d867d76adc2914ec8352cac66be
