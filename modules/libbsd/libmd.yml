@@ -1,0 +1,6 @@
+name: libmd
+buildsystem: autotools
+sources:
+  - type: archive
+    url: https://libbsd.freedesktop.org/releases/libmd-1.0.4.tar.xz
+    sha256: f51c921042e34beddeded4b75557656559cf5b1f2448033b4c1eec11c07e530f

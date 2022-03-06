@@ -2,13 +2,20 @@ app-id: org.darlinghq.Darling
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.llvm13
 command: darling shell
 modules:
   - name: darling
     buildsystem: cmake
     builddir: true
+    build-options:
+      append-path: /usr/lib/sdk/llvm13/bin
+      prepend-ld-library-path: /usr/lib/sdk/llvm13/lib
     modules:
       - modules/fuse/fuse.yml
+      - modules/libbsd/libbsd.yml
+      - modules/flatpak-shared-modules/python2.7/python-2.7.json
     sources:
       - type: git
         url: https://github.com/darlinghq/darling.git
