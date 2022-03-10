@@ -12,6 +12,9 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/llvm13/bin
       prepend-ld-library-path: /usr/lib/sdk/llvm13/lib
+    config-opts:
+      - -DFLATPAK_BUILD=ON
+      - -DTARGET_i386=OFF
     modules:
       - modules/fuse/fuse.yml
       - modules/libbsd/libbsd.yml
