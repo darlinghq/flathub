@@ -22,4 +22,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/darlinghq/darling.git
-        commit: c30e22f13ea61d867d76adc2914ec8352cac66be
+        commit: 32463c1cee6d336b4438e3eb53083c32df73874e
