@@ -23,7 +23,8 @@ modules:
       - modules/fuse/fuse.yml
       - modules/libbsd/libbsd.yml
       - modules/flatpak-shared-modules/python2.7/python-2.7.json
+      - modules/flatpak-shared-modules/glu/glu-9.json
     sources:
       - type: git
         url: https://github.com/darlinghq/darling.git
-        commit: b23e08c0cf4b2f8545104281f58f119c5fec791c
+        commit: ef588cda8bd1764db261ef83ced928b11a079da0
