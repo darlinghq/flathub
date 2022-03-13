@@ -1,0 +1,7 @@
+name: darling-shell
+buildsystem: simple
+build-commands:
+  - install -D darling-shell.sh /app/bin/darling-shell.sh
+sources:
+  - type: file
+    path: darling-shell.sh

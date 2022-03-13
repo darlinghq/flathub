@@ -4,7 +4,7 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.llvm13
-command: darling shell
+command: darling-shell.sh
 modules:
   - name: darling
     buildsystem: cmake
@@ -24,6 +24,7 @@ modules:
       - modules/libbsd/libbsd.yml
       - modules/flatpak-shared-modules/python2.7/python-2.7.json
       - modules/flatpak-shared-modules/glu/glu-9.json
+      - modules/darling-shell/darling-shell.yml
     sources:
       - type: git
         url: https://github.com/darlinghq/darling.git
